@@ -8,7 +8,7 @@ const ViewAllResults = (props) => {
   const [id, setId] = React.useState(1);
 
   const getResults = async () => {
-    let res = await fetch(`http://localhost:3000/result/getByTeamId?id=${id}`);
+    let res = await fetch(`http://72.204.89.165:2999/result/getByTeamId?id=${id}`);
     res = await res.json();
     if (res["HasError"] == false) {
       setResults(res["Results"]);

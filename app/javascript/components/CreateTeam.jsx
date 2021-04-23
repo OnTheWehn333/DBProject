@@ -20,7 +20,7 @@ const CreateTeam = () => {
   const SendTeam = () => {
     let data = { name: name, nickname: nickname, rank: rank };
     let json = JSON.stringify(data);
-    fetch("http://localhost:3000/team", {
+    fetch("http://72.204.89.165:2999/team", {
       method: "POST",
       headers: {
         "content-type": "application/json",

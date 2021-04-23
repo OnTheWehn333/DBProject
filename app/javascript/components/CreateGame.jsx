@@ -26,7 +26,7 @@ const CreateGame = () => {
     console.log(date);
     let data = { rank1: rank1, rank2: rank2, location: location, date: date };
     let json = JSON.stringify(data);
-    fetch("http://localhost:3000/game", {
+    fetch("http://72.204.89.165:2999/game", {
       method: "POST",
       headers: {
         "content-type": "application/json",

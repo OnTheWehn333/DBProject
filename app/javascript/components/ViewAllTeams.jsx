@@ -10,7 +10,7 @@ const ViewAllTeams = (props) => {
   }, [])
 
   const getTeams = async() => {
-    let res = await fetch("http://localhost:3000/team");
+    let res = await fetch("http://72.204.89.165:2999/team");
     res = await res.json();
     if (res["HasError"] == false) {
       setTeams(res["Teams"])

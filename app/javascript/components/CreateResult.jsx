@@ -34,7 +34,7 @@ const CreateResult = () => {
       score2: score2,
     };
     let json = JSON.stringify(data);
-    fetch("http://localhost:3000/result", {
+    fetch("http://72.204.89.165:2999/result", {
       method: "POST",
       headers: {
         "content-type": "application/json",
